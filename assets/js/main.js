@@ -159,15 +159,19 @@
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
+
+      $('.accordion-button').click(function(){
+        var id = $(this).attr('data-bs-target');
+        var target = $('.accordion-item-content ' + id  );
+        if(!$(target).hasClass('.show')){
+          $('.accordion-item-content .accordion-collapse.collapse').removeClass('show');
+          $(target).addClass('show');
+        }
+
+      });
     });
   });
 
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+
 
 })(jQuery);
