@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -629,22 +629,27 @@ section {
 }
 
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/hero/cta-bg.jpg") center center;
   background-size: cover;
   padding: 60px 0;
 }
 .cta.preparatoria {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/preparatoria.jpg") center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/hero/preparatoria.jpg") center center;
   background-size: cover;
   padding: 60px 0;
 }
 .cta.licenciatura {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/licenciatura.jpg") center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/hero/licenciatura.jpg") center center;
   background-size: cover;
   padding: 60px 0;
 }
 .cta.maestria {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/maestria.jpg") center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/hero/maestria.jpg") center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+.cta.yosoyvalle {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/hero/yosoyvalle.jpg") center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -1029,7 +1034,7 @@ section {
 .breadcrumbs h2 {
   font-size: 26px;
   font-weight: 600;
-  color:#FBA301;
+  color:#813cb0;
 }
 
 .breadcrumbs ol {
@@ -1050,6 +1055,13 @@ section {
   padding-right: 10px;
   color: #655356;
   content: "/";
+}
+.breadcrumbs li a{
+  font-weight: 600;
+  color: #171c20;
+}
+.breadcrumbs li a:hover{
+  border-bottom: 2px solid #FBA301;;
 }
 @media(min-width: 992px){
   .main-inner-pages .cta {
@@ -1378,6 +1390,7 @@ section {
 .blog .entry-single .entry-title {
   font-size: 36px;
   line-height: 42px;
+  color: #5621a3;
 }
 
 .blog .blog-author {
@@ -1576,7 +1589,7 @@ section {
   font-weight: 700;
   padding: 0 0 0 0;
   margin: 0 0 15px 0;
-  color: #493c3e;
+  color: #5621a3;
   position: relative;
 }
 
@@ -1652,8 +1665,8 @@ section {
 
 .blog .sidebar .recent-posts h4 {
   font-size: 15px;
-  margin-left: 95px;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .blog .sidebar .recent-posts h4 a {
@@ -1662,12 +1675,11 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #e43c5c;
+  color: #FBA301;
 }
 
 .blog .sidebar .recent-posts time {
   display: block;
-  margin-left: 95px;
   font-style: italic;
   font-size: 14px;
   color: #b1a0a3;
@@ -1707,6 +1719,34 @@ section {
   padding-left: 5px;
   color: #dfd8d9;
   font-size: 14px;
+}
+.blog-details h5{
+  color:#5621a3;
+  font-weight: 600;
+  font-family: "Nunito",sans-serif;
+}
+.blog-details .card .card-title{
+  margin-bottom: 0;
+}
+.blog-details .card .card-text{
+  font-size:15px;
+}
+.blog-details .card .card-date{
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.blog-details .card .btn{
+  color: #813cb0;
+  border-color: #813cb0;
+}
+.blog-details .card .btn:hover,
+.blog-details .card .btn:focus,
+.blog-details .card .btn:active{
+  background: #FBA301;
+  border: #fba301;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgb(251 163 1 / 50%);
 }
 
 #footer {
