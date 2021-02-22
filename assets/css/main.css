@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: #fff;
+  background: #d1e4dd;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 12px 0;
 }
@@ -1752,7 +1752,7 @@ section {
 #footer {
   color: #444444;
   font-size: 14px;
-  background: #f6f4f4;
+  background:#d1e4dd;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -1901,4 +1901,13 @@ section {
   background: #813cb0;
   color: #fff;
   text-decoration: none;
+}
+#footer .info p{
+  margin-bottom: 5px;
+}
+#footer .info a{
+  color:#444444;
+}
+#footer .info a:hover{
+  border-bottom:2px solid #FBA301;
 }
